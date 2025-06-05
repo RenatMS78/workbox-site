@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WORKBOX — Умные кабинки для аренды</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="WORKBOX Logo" />
+      <span class="logo-text">WORKBOX</span>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#about">О проекте</a></li>
+        <li><a href="#how">Как работает</a></li>
+        <li><a href="#partner">Партнёру</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Инвестируй в WORKBOX — сеть умных кабинок</h1>
+      <p>Быстрый запуск. Высокий трафик. Доход с первой недели.</p>
+      <a href="#contact" class="btn">Связаться</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/kabina-nobg.png" alt="Кабинка WORKBOX" class="kabina" />
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Что такое WORKBOX?</h2>
+      <p>WORKBOX — это умные рабочие кабинки, размещённые в торговых центрах и публичных пространствах. Люди арендуют их поминутно через мобильное приложение. Всё автоматизировано: доступ по QR, таймер, оплата и мониторинг.</p>
+    </div>
+  </section>
+
+  <section id="how" class="features">
+    <div class="container">
+      <h2>Как это работает</h2>
+      <ul>
+        <li>📱 Клиент скачивает приложение</li>
+        <li>📍 Находит ближайшую кабинку</li>
+        <li>🔓 Сканирует QR-код и заходит</li>
+        <li>⏱ Использует — платит только за время</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="partner" class="partner">
+    <div class="container">
+      <h2>Партнёру / Инвестору</h2>
+      <p>
+        WORKBOX — готовая модель с быстрой окупаемостью. Установи кабинку, получай доход уже с первого месяца. Мы берём на себя сборку, софт, поддержку.
+      </p>
+      <img src="images/photo.jpg" alt="Основатель" class="founder-photo" />
+      <p><strong>Ренат, фаундер WORKBOX</strong></p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Обратная связь</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Ваше имя (необязательно)" />
+        <input type="email" name="email" placeholder="Email (необязательно)" />
+        <input type="tel" name="phone" placeholder="Телефон (необязательно)" />
+        <textarea name="message" placeholder="Сообщение"></textarea>
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+      <p id="successMessage" class="hidden">Ваш запрос отправлен, я скоро с Вами свяжусь</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 WORKBOX. Ренат, фаундер WORKBOX</p>
+      <p>Email: <a href="mailto:profiufa@mail.ru">profiufa@mail.ru</a> | Telegram: <a href="https://t.me/MRenatS1">@MRenatS1</a> | <a href="https://wrkbox.ru/">wrkbox.ru</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('successMessage').classList.remove('hidden');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
